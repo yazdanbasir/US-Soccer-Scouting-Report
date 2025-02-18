@@ -3,8 +3,7 @@ from streamlit_extras.switch_page_button import switch_page
 
 st.title("Midfielder Scouting App")
 st.divider()
-# st.header("Pitch Events (Mapped)")
-# st.subheader("Defensive Actions")
+
 st.header("League and Team Rankings")
 st.subheader("NWSL vs D1 Arkema")
 
@@ -29,4 +28,9 @@ with footer.container():
         back = st.button("<-", key="back")
         if back:
             switch_page("5 - Comparison")
+
+    with col2:
+        next = st.button("->", key="next")
+        if next:
+            switch_page("7 - Events")
 #endregion 
