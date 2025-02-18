@@ -6,8 +6,9 @@ st.divider()
 st.header("Pitch Events (Mapped)")
 st.subheader("Defensive Actions")
 
-st.image("/Users/yazdan/Desktop/Files/da.png")
-
+a, b = st.columns(2)
+a.image("images/globalrank.png")
+b.image("images/teamratings.png")
 #region BUTTONS
 st.divider()
 footer = st.empty()
