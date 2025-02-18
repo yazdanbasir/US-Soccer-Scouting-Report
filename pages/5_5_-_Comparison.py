@@ -203,5 +203,5 @@ with footer.container():
     with col2:
         next = st.button("->", key="next")
         if next:
-            switch_page("6 - Events")
+            switch_page("6 - End")
 #endregion 
