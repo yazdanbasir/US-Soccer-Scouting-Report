@@ -14,6 +14,6 @@ pip3 install pandas==2.2.3
 pip3 install plotly==5.24.1
 pip3 install streamlit==1.42.0
 pip3 install streamlit-extras==0.5.0
-streamlit run 1_1_-_Home.py
+streamlit run 1_1_-_Home.py (Run this in the directory where you have the project)
 
 And voila! Enjoy :)
