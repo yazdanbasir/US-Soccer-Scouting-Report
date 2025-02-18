@@ -17,7 +17,7 @@ col1, col2, col3 = st.columns(3)
 col1.subheader("Hal Hershfelt")
 col1.image("images/hershfelt.jpg", use_container_width=True)
 
-col2.subheader("Sam Coffey")
+col2.subheader("Samantha Coffey")
 col2.image("images/coffey.jpg", use_container_width=True)
 
 col3.subheader("Korbin Albert")
