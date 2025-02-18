@@ -1,10 +1,12 @@
 import streamlit as st
 from streamlit_extras.switch_page_button import switch_page
 
-# st.title("PAGE IN PROGRESS!!")
-# st.divider()
+st.title("Midfielder Scouting App")
+st.divider()
 # st.header("Pitch Events (Mapped)")
 # st.subheader("Defensive Actions")
+st.header("League and Team Rankings")
+st.subheader("NWSL vs D1 Arkema")
 
 a, b = st.columns(2)
 a.image("images/globalrank.png")
