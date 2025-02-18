@@ -5,8 +5,7 @@ st.title("Midfielder Scouting App")
 st.divider() 
 
 a, b, c=st.columns([0.01,1,0.01])
-# Using B column to center image
-b.image("images/cover.jpg", use_container_width=True)
+b.image("images/cover.jpg", use_container_width=True) # Using B column to center image
 
 #region BUTTONS
 footer = st.empty()

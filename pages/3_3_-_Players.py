@@ -33,8 +33,12 @@ demographics = pd.DataFrame({
 
 demographics_transposed = demographics.T
 # st.dataframe(demographics_transposed)
+st.write("")
+st.write("")
 st.table(demographics_transposed)
 #endregion Player Demographics
+
+st.text("Sources: Official USWNT Roster, SofaScore")
 
 #region BUTTONS
 st.divider()

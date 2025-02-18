@@ -9,6 +9,13 @@ from streamlit_extras.switch_page_button import switch_page
 a, b = st.columns(2)
 a.image("images/globalrank.png")
 b.image("images/teamratings.png")
+
+st.write("Source: Opta/Opta Analyst")
+st.divider()
+
+st.image("images/table.png")
+st.write("Source: SofaScore")
+
 #region BUTTONS
 st.divider()
 footer = st.empty()

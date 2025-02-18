@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import pandas as pd
 
-st.set_page_config(layout="wide")
+# st.set_page_config(layout="wide")
 st.title("Midfielder Scouting App")
 st.divider()
 st.header("Performance Metrics (Raw Values)")
@@ -85,13 +85,13 @@ else:
     # Add traces for each stat (chart) and for each player
     for i, (col, alias) in enumerate(zip(filtered_columns, filtered_aliases)):
         for player in players:
-            stat_value = df[df["player_name"] == player][col].values[0]
+            statValue = df[df["player_name"] == player][col].values[0]
             fig.add_trace(go.Bar(
                 name=player,                    
                 x=[alias],                      
-                y=[stat_value],
+                y=[statValue],
                 marker_color=playerColors[player]["bar"],
-                text=[f'{stat_value:.2g}'],
+                text=[f'{statValue:.2g}'],
                 textposition="auto",
                 textfont=dict(color=playerColors[player]["text"]),
                 showlegend=(i == 0), # Only show the legend in the first subplot
