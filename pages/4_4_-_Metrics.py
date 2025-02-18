@@ -13,10 +13,16 @@ st.subheader("Defensive and Offensive")
 df = pd.read_csv("cdm_data.csv")
 
 #region BAR NEW ----------------------------------------------------
+# playerColors = {
+#     "Hal Hershfelt": {"bar": "#FFB300", "text": "#FFFFFF"},
+#     "Samantha Coffey": {"bar": "#d43e3e", "text": "#FFFFFF"},
+#     "Korbin Albert": {"bar": "#0052cc", "text": "#FFFFFF"}
+# }
+
 playerColors = {
-    "Hal Hershfelt": {"bar": "#FFB300", "text": "#FFFFFF"},
-    "Samantha Coffey": {"bar": "#d43e3e", "text": "#FFFFFF"},
-    "Korbin Albert": {"bar": "#0052cc", "text": "#FFFFFF"}
+    "Hal Hershfelt": {"bar": "#bd0a3c", "text": "#FFFFFF"},  # Red
+    "Samantha Coffey": {"bar": "#FFFFFF", "text": "#000000"}, # white
+    "Korbin Albert": {"bar": "#0336a4", "text": "#FFFFFF"}  # blue
 }
 
 defensiveColumns = [

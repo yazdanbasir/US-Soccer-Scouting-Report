@@ -16,7 +16,7 @@ font_normal = FontManager('https://raw.githubusercontent.com/googlefonts/roboto/
 font_italic = FontManager('https://raw.githubusercontent.com/googlefonts/roboto/main/src/hinted/Roboto-Italic.ttf')
 font_bold = FontManager('https://raw.githubusercontent.com/google/fonts/main/apache/robotoslab/RobotoSlab[wght].ttf')
 
-options = ["Hal Hershfelt", "Sam Coffey", "Korbin Albert"]
+options = ["Hal Hershfelt", "Samantha Coffey", "Korbin Albert"]
 defaultSelection = ["Hal Hershfelt"]
 # selection = st.pills("Players", options, default=defaultSelection, selection_mode="multi")
 selection = st.segmented_control("Players", options, default=defaultSelection, selection_mode="multi")
@@ -25,19 +25,24 @@ selection = st.segmented_control("Players", options, default=defaultSelection, s
 def generate_chart(selection):
     playerIndexes = {
         "Hal Hershfelt": 0,
-        "Sam Coffey": 1,
+        "Samantha Coffey": 1,
         "Korbin Albert": 2
     }
-    playerColors = {
-        "Hal Hershfelt": {"slice": "#FFB300", "text": "#000000"},  # Darker Yellow with Black text
-        "Sam Coffey":    {"slice": "#d43e3e", "text": "#FFFFFF"},  # Darker Red with White text
-        "Korbin Albert": {"slice": "#0052cc", "text": "#FFFFFF"}   # Blue with White text
-    }
+    # playerColors = {
+    #     "Hal Hershfelt": {"slice": "#FFB300", "text": "#000000"},  # Darker Yellow with Black text
+    #     "Sam Coffey":    {"slice": "#d43e3e", "text": "#FFFFFF"},  # Darker Red with White text
+    #     "Korbin Albert": {"slice": "#0052cc", "text": "#FFFFFF"}   # Blue with White text
+    # }
     # teams = {
     #     "Hal Hershfelt": "Washington Spirit",
     #     "Sam Coffey": "Portland Thorns",
     #     "Korbin Albert": "PSG WFC"
     # }
+    playerColors = {
+        "Hal Hershfelt": {"slice": "#bd0a3c", "text": "#FFFFFF"},  # Red
+        "Samantha Coffey": {"slice": "#FFFFFF", "text": "#000000"}, # white
+        "Korbin Albert": {"slice": "#0336a4", "text": "#FFFFFF"}  # blue
+    }
     params = [
         "Progessive Passes",
         "Final Third Entry Passes",
