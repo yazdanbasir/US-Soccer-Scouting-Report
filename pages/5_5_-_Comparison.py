@@ -170,7 +170,7 @@ def generate_chart(selection):
         fig, ax = plt.subplots(figsize=(8, 8.5))
         ax.text(
             0.5, 0.5,
-            "Please select 1 or 2 players to display the chart.",
+            "Please select 1 or 2 players to display the chart",
             ha="center",
             va="center",
             fontsize=14
@@ -178,9 +178,9 @@ def generate_chart(selection):
     return fig
 
 if not selection:
-    st.info("Please select at least one player to display the chart.")
+    st.info("Please select 1 or 2 players to display the chart")
 elif len(selection) > 2:
-    st.info("Only two players can be selected for comparison. Please select up to two players.")
+    st.info("Please select 1 or 2 players to display the chart")
 else:
     # Convert selection to a tuple for caching
     sel_tuple = tuple(selection)
